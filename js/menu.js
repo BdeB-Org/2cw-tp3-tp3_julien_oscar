@@ -39,14 +39,8 @@ fetch(url)
         return menu.map(function (menu) {
             let li = createNode("li"),
                 span = createNode("span");
-            var a = document.createElement("a");
-            a.setAttribute('href', "#affichage_produit")
 
             span.innerHTML = `${menu.id_menu}. ${menu.type}`;
-
-            if (id_menu = 2) {
-                span.appendChild(a)
-            }
 
             append(li, span);
             append(menu_ul, li);

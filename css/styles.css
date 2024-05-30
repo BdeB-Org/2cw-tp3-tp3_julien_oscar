@@ -13,14 +13,52 @@ header {
     padding: 0;
 }
 
+footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.footer-text {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: rgb(196, 191, 191);
+}
+
+.footer-text a {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
 .banner {
     margin-left: 2em;
+    display: flex;
+}
+
+.banner p {
+    padding-left: 20px;
+    padding-top: 18px;
+    margin-left: 6rem;
+    font-weight: bold;
+}
+
+.banner a p:hover {
+    text-decoration: underline;
 }
 
 .banner a {
     color: black;
     text-decoration: none;
 }
+
 
 #root h1 {
     text-align: center;
