@@ -15,27 +15,27 @@ function append(parent, el) {
 }
 
 
-const utilisateur_ul = document.getElementById("utilisateur");
+const reservation_ul = document.getElementById("reservation");
 var elemH1 = document.getElementById("h1");
 
 
-const url = "http://localhost:8080/ords/tp3/utilisateur/";
+const url = "http://localhost:8080/ords/tp3/reservation/";
 
-elemH1.innerHTML = "Utilisateur";
+elemH1.innerHTML = "Reservation";
 
 fetch(url)
     .then((resp) => resp.json())
     .then(function (data) {
-        let utilisateur = data.items;
+        let reservation = data.items;
 
-        return utilisateur.map(function (utilisateur) {
+        return reservation.map(function (reservation) {
             let li = createNode("li"),
                 span = createNode("span");
 
-            span.innerHTML = `Id utilisateur: ${utilisateur.id_utilisateur}. Nom: ${utilisateur.nom}, Addresse: ${utilisateur.addresse}. Telephone: ${utilisateur.telephone},`;
+            span.innerHTML = `Id reservation: ${reservation.id_reservation}. Id utilisateur: ${reservation.id_utilisateur}. Nombre de places: ${reservation.nombre_places}`;
 
             append(li, span);
-            append(utilisateur_ul, li);
+            append(reservation_ul, li);
         });
 
     })
