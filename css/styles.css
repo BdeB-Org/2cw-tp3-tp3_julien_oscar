@@ -6,7 +6,7 @@ body {
 
 header {
     width: 100%;
-    background-color: lightgray;
+    background-color: rgb(196, 191, 191);
     position: relative;
     display: flex;
     margin: 0;
