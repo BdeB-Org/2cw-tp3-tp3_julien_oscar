@@ -50,6 +50,10 @@ footer {
     font-weight: bold;
 }
 
+.banner h1 {
+    padding-right: 4em;
+}
+
 .banner a p:hover {
     text-decoration: underline;
 }
@@ -58,7 +62,6 @@ footer {
     color: black;
     text-decoration: none;
 }
-
 
 #root h1 {
     text-align: center;
